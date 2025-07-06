@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Gallery</title>
+  <style>
+   
+    body {
+  font-family: 'Georgia', serif;
+  background-color: #fff0f5;
+  color: #5c3a3a;
+}
+
+header {
+  background-color: #f8c8dc;
+  color: #4a2e2e;
+  text-align: center;
+  padding: 30px;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 40px 0 20px;
+  text-align: center;
+  font-size: 2em;
+  color: #6b2e3a;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #ffd6e3, #fff0f5, #ffd6e3);
+  padding: 16px 20px;
+  border: 2px solid #d17a9a;
+  border-radius: 12px;
+  letter-spacing: 1px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.genre-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 35px ;
+  background-color: #fff8fb;
+}
+
+@media (max-width: 900px) {
+  .genre-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+ @media (max-width: 600px) {
+  .genre-section {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    font-size: 1.8em;
+    padding: 20px;
+  }
+
+  .book-card img {
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    padding: 12px 20px;
+  }
+}
+
+.book-card {
+  background-color: #fff0f5;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #f4c2d7;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 60%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.book-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #7a2e4a;
+  margin-bottom: 5px;
+}
+
+.book-author {
+  font-size: 0.9em;
+  color: #875c5c;
+  margin-bottom: 10px;
+}
+
+.book-link {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 7px 12px;
+  background-color: #e4879e;
+  color: white;
+  font-size: 0.9em;
+  border-radius: 6px;
+}
+
+.book-link:hover {
+  background-color: #cc5b7d;
+}
+
+
+.contact {
+  text-align: center;
+  padding: 25px;
+  background-color: #fbd6e1;
+  border-top: 2px dashed #d17a9a;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #6e2c3f;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.contact a:hover {
+  color: #b03c65;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #f4b3c2;
+  padding: 12px 0;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.navbar a { 
+  color: #4a2e2e;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.navbar a:hover {
+  color: #a42f5b;
+}
+
+footer
+{
+  margin-top:20px ;
+  letter-spacing:1px;
+
+}
+
+  </style>
+</head>
+
+
+<body>
+
+<header>THE QUITE ESCAPE</header>
+
+<nav class="navbar">
+  <a href="#fiction">Fiction</a>
+  <a href="#mystery">Mystery & Thriller</a>
+  <a href="#romance">Romance</a>
+  <a href="#ya">Young Adult</a>
+</nav>
+
+ 
+<h2  id="fiction"> 🌟 Fiction</h2>
+<div class="genre-section">
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/ZokfdcUx1-_doy2g630_ToPmrutHt_sfUH4q31ZccQs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzE4LzQ5/LzZjLzE4NDk2YzMx/YjkwMjcyOWMyZjU4/NzU3OWUxYjg5Yzdl/LmpwZw" alt="Book Cover">
+    <div class="book-title">PRIDE AND PREJUDICE</div>
+    <div class="book-author">JANE AUSTEN</div>
+    <a href="https://www.gutenberg.org/cache/epub/1342/pg1342-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/5hJlAtkAmjuQ5F-TXzH-jkEKyz6gA5rrn9THT-GIU8Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waWN0/dXJlcy5hYmVib29r/cy5jb20vaW52ZW50/b3J5L21kL21kMzIx/NTY1MzcxMDkuanBn" alt="Book Cover">
+    <div class="book-title">LITTLE WOMEN</div>
+    <div class="book-author">LOUISA MAY ALCOTT</div>
+    <a href="https://www.gutenberg.org/cache/epub/1260/pg1260-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+    <div class="book-card">
+    <img src="https://imgs.search.brave.com/JCbcBzA12yQ6xnfrOsLR-YuzcATTsY0lG1gXmbgZhgY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDF3R2dxVnFZVUwu/anBn" alt="Book Cover">
+    <div class="book-title">THE AGE OF INNOCENCE</div>
+    <div class="book-author">EDITH WHARTON</div>
+    <a href="https://www.gutenberg.org/cache/epub/541/pg541-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+    <div class="book-card">
+    <img src="https://imgs.search.brave.com/EHlBqnQetV4ul4q8oR1KSQBZ8ZD1HFVex14SbyEUhXU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/Lzgxc2QxNzVnTVhM/LmpwZw" alt="Book Cover">
+    <div class="book-title">SENSE AND SENSIBILITY</div>
+    <div class="book-author">JANE AUSTEN</div>
+    <a href="https://www.gutenberg.org/cache/epub/161/pg161-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+    <div class="book-card">
+    <img src="https://imgs.search.brave.com/c02gpWfqU2qRUqMB-ntmrXZFiStoxHRg1NJQhrtb0-U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExNDE4MDM4L3Iv/aWwvOGViYzFjLzI5/MjU2Nzk3NjcvaWxf/MzQweDI3MC4yOTI1/Njc5NzY3X2E3NGYu/anBn" alt="Book Cover">
+    <div class="book-title">JANE EYRE</div>
+    <div class="book-author">CHARLOTTE BRONTE</div>
+    <a href="https://www.gutenberg.org/cache/epub/1260/pg1260-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+      <div class="book-card">
+    <img src="https://imgs.search.brave.com/y3RcMUGxMynw9YRbsdOipZCCbjeDo8IrIeU6BMDZtQA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExNDE4MDM4L3Iv/aWwvZjA0NGViLzI4/Nzc5NDY2NTYvaWxf/NjAweDYwMC4yODc3/OTQ2NjU2XzFlZjUu/anBn" alt="Book Cover">
+    <div class="book-title">WUTHERING HEIGHTS</div>
+    <div class="book-author">Emily Brontë</div>
+    <a href="https://www.gutenberg.org/cache/epub/768/pg768-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+      <div class="book-card">
+    <img src="https://imgs.search.brave.com/AYvHaa1LHJ9hRLPhPgSrXep61QOs4x0Q1T8S7SMMKKw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Y3L2Zi/L2E2L2Y3ZmJhNmE2/MWZiYzU1NzhiODZi/MDRhNGI0ZjhjOGI2/LmpwZw" alt="Book Cover">
+    <div class="book-title">ANNA KAREINA</div>
+    <div class="book-author">Leo Tolstoy</div>
+    <a href="https://www.gutenberg.org/cache/epub/1399/pg1399-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+        <div class="book-card">
+    <img src="https://imgs.search.brave.com/8o9ys6XTaGQeXKmdMKmWG5LMXWYU98VIshuq_8lrvrc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cGxhbmV0ZWJvb2su/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzAzL0Jvb2st/Q292ZXItVGhlLVBp/Y3R1cmUtb2YtRG9y/aWFuLUdyYXktMS5w/bmc" alt="Book Cover">
+    <div class="book-title">THE PICTURE OF DORIAN GRAY</div>
+    <div class="book-author">Oscar Wilde</div>
+    <a href="https://www.gutenberg.org/cache/epub/174/pg174-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+</div>
+
+
+<h2 id="mystery">🕵️ Mystery & Thriller</h2>
+<div class="genre-section">
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/DHzBdeEqPf1fCaharKuFI6u_w0FElrYRM-y6Lg9qJyk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMxLnBlbmd1aW5y/YW5kb21ob3VzZS5j/b20vY292ZXIvOTc4/MDQyNTEwNDA1Nw" alt="Book Cover">
+    <div class="book-title">THE HOUND OF THE BASKERVILLES</div>
+    <div class="book-author">ARTHUR CONAN DOYLE</div>
+    <a href="https://www.gutenberg.org/cache/epub/2852/pg2852-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/1t2O7SXcfm6iwMc9fpYDafFS-6Q1jKtssyE_xlOoa64/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzYxbFk4dUliLW5M/LmpwZw" alt="Book Cover">
+    <div class="book-title">THE RETURN OF SHERLOCK HOLMES</div>
+    <div class="book-author">ARTHUR CONAN DOYLE</div>
+    <a href="https://www.gutenberg.org/cache/epub/108/pg108-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+    <div class="book-card">
+    <img src="https://imgs.search.brave.com/YL5mtxTaeZO-kIqGeijGl-WVMrHat6exhLboYN6DlQo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waWN0/dXJlcy5hYmVib29r/cy5jb20vaW52ZW50/b3J5L21kL21kMzIx/NTg0MDcwNDguanBn" alt="Book Cover">
+    <div class="book-title">THE ADVENTURES OF SHERLOCK HOLMES</div>
+    <div class="book-author">ARTHUR CONAN DOYLE</div>
+    <a href="https://www.gutenberg.org/cache/epub/1661/pg1661-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+    <div class="book-card">
+    <img src="https://imgs.search.brave.com/MF_jj0vdNjXl0goDHmzWgR46h0cJDkcxsuKuTuqaSo8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTEyLUI3Z0w5Skwu/anBn" alt="Book Cover">
+    <div class="book-title">THE TURN OF THE SCREW</div>
+    <div class="book-author">HENRY JAMES</div>
+    <a href="https://www.gutenberg.org/cache/epub/209/pg209-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+    <div class="book-card">
+    <img src="https://imgs.search.brave.com/TOGNR6LVMf6jl-j-XH0D6msO34KL_-nFLAXdF_lkdWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFKRjkxOFBDUUwu/anBn" alt="Book Cover">
+    <div class="book-title">THE MEMOIRS OF SHERLOCK HOLMES</div>
+    <div class="book-author">ARTHUR CONAN DOYLE</div>
+    <a href="https://www.gutenberg.org/cache/epub/834/pg834-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+ <div class="book-card">
+    <img src="https://imgs.search.brave.com/R6BIqFEFS3XY7t_sYm4z-fHLZqOhZm8x9pWshFsZI2M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waWN0/dXJlcy5hYmVib29r/cy5jb20vaW52ZW50/b3J5L21kL21kMzAz/MzkwNjU4MjJfMi5q/cGc" alt="Book Cover">
+    <div class="book-title">A STUDY IN SCARLET</div>
+    <div class="book-author">ARTHUR CONAN DOYLE</div>
+    <a href="https://www.gutenberg.org/cache/epub/244/pg244-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+   <div class="book-card">
+    <img src="https://imgs.search.brave.com/6_JEK_B9qrWlshxdegKO5m8hUzYPlxPE9gKy3HOFSjQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9raW5n/c2xhbmdsZXlwcmVz/cy5jb20vY2RuL3No/b3AvZmlsZXMvbW9j/a3VwX2Zyb250X2Nv/dmVyXzc0M2FkM2Y0/LWIxZmUtNDFjYy1i/ZDViLWMwY2VkNjU0/ZDUxMy5wbmc_dj0x/NzI5OTg5Mjg1Jndp/ZHRoPTE0NDU" alt="Book Cover">
+    <div class="book-title">THE WOMEN IN WHITE</div>
+    <div class="book-author">WILKI COLLINS</div>
+    <a href="https://www.gutenberg.org/cache/epub/583/pg583-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+     <div class="book-card">
+    <img src="https://imgs.search.brave.com/bF_LtHER6jtaCpffVv0i-uDhh9gZ-iQm27yKf41GvIo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nbG9i/YWwub3VwLmNvbS9h/Y2FkZW1pYy9jb3Zl/cnMvcGRwLzk3ODAx/OTg4MTkzOTQ" alt="Book Cover">
+    <div class="book-title">THE MOONSTONE</div>
+    <div class="book-author">WILKI COLLINS</div>
+    <a href="https://www.gutenberg.org/cache/epub/155/pg155-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+</div>
+
+
+<h2 id="romance">💕 Romance</h2>
+<div class="genre-section">
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/KylMIr-m0coh8ixadcTs5246VgYtKNlBp7ibNXPS5VA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vZS9lNC9J/dF9FbmRzX3dpdGhf/VXNfKENvbGxlZW5f/SG9vdmVyKS5wbmc" alt="Book Cover">
+    <div class="book-title">IT ENDS WITH US </div>
+    <div class="book-author">COLLEN HOVER </div>
+    <a href="https://icrrd.com/public/media/15-05-2021-052358It-Ends-with-Us.pdf" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/Hm_Zursj-Z_0Eb7lCy_q4AwQO0x5wEIfhS4r497My-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS4yMTU4/OTg0NTQxLjE3OTEv/ZnBvc3RlcixzbWFs/bCx3YWxsX3RleHR1/cmUsc3F1YXJlX3By/b2R1Y3QsNjAweDYw/MC5qcGc" alt="Book Cover">
+    <div class="book-title">EMMA</div>
+    <div class="book-author">JANE AUSTEN</div>
+    <a href="https://www.gutenberg.org/cache/epub/158/pg158-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/i3SAl75iWtrruL2hO41iGaqRCbYSO0_wLXgEGqC9m98/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vZWxnZWV3/cml0ZXMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzAx/L05vdmVtYmVyLTkt/YnktQ09sbGVlbi1I/b292ZXIuanBnP3Jl/c2l6ZT0zMDUsNDc1" alt="Book Cover">
+    <div class="book-title">NOVEMBER 9</div>
+    <div class="book-author">COLLEN HOVER</div>
+    <a href="https://online.fliphtml5.com/cavuk/fxmy/#p=12" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/aRXWB3I8LfpsRQLYDoDeSNZFcg_g08cDcP3ObjhyEx0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oYXVu/dGVkaGVhcnRzLndv/cmRwcmVzcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTAv/MTEvd3V0aGVyaW5n/LWhlaWdodHMxLmpw/Zz93PTI1NCZoPTQw/Nw" alt="Book Cover">
+    <div class="book-title">WUTHERING HEIGHTS</div>
+    <div class="book-author">EMILY BRONTË</div>
+    <a href="https://www.gutenberg.org/cache/epub/768/pg768-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/s0peQe2W5JfDnQyRMpL7ha2ihcwFNARgCaF_d_8jLZc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDE0S0NSUzVaWUwu/anBn" alt="Book Cover">
+    <div class="book-title">PERSUASION</div>
+    <div class="book-author">JANE AUSTEN</div>
+    <a href="https://www.gutenberg.org/cache/epub/105/pg105-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/W20f8WelRZVhLH4k2ug1d8RYiUCnL8it_QnvEH88xWc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/YW4tb2RkLWNob2lj/ZS1mb3ItYS1jb3Zl/ci1kZXNpZ24tZm9y/LW1hbnNmaWVsZC1w/YXJrLW9waW5pb25z/LXYwLTZrbWRmcWdz/YnJtYzEuanBnP3dp/ZHRoPTIxNzYmZm9y/bWF0PXBqcGcmYXV0/bz13ZWJwJnM9ZGRi/ODg3NmE2ZmNiYjVk/ZGFmNDFiMDZmZGFk/N2I4NTNmMTczNGQ1/MQ" alt="Book Cover">
+    <div class="book-title">MANSFIELD PARK</div>
+    <div class="book-author">JANE AUSTEN</div>
+    <a href="https://www.gutenberg.org/cache/epub/141/pg141-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+    <div class="book-card">
+    <img src="https://imgs.search.brave.com/-QqQXyoMLbXSX-lopa3XwRM2WgN5y2mOFJZIs-yQsRY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFQSjBGMFptdUwu/anBn" alt="Book Cover">
+    <div class="book-title">A ROOM WITH VIEW</div>
+    <div class="book-author">E.M. FORSTER</div>
+    <a href="https://www.gutenberg.org/cache/epub/2641/pg2641-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+      <div class="book-card">
+    <img src="https://imgs.search.brave.com/taNVe-bN0RC_ocN-fNt-xJVGzmw4FLJroZMpIN2wN2w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxVVgwemtIR1pM/LmpwZw" alt="Book Cover">
+    <div class="book-title">NORTH AND SOUTH</div>
+    <div class="book-author">Mrs.GASKELL</div>
+    <a href="https://www.gutenberg.org/cache/epub/4276/pg4276-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+</div>
+
+
+
+<h2 id="ya">🎓 Young Adult & Coming-of-Age</h2>
+<div class="genre-section">
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/TAOVrKEA9NlCe5t_R6yJAwmXw9bXnKYfG-k5hvGo688/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zaG9w/YXRzdWxsaXZhbi5j/b20vY2RuL3Nob3Av/cHJvZHVjdHMvQW5u/ZW9mR3JlZW5HYWJs/ZXNPcmlnaW5hbEJv/b2tfUHJvZHVjdElt/YWdlMS5qcGc_dj0x/NjA5NTI5NzIxJndp/ZHRoPTEyMDA" alt="Anne of Green Gables">
+    <div class="book-title">ANNE OF GREEN GABLES</div>
+    <div class="book-author">L. M. MONTGOMERY</div>
+    <a href="https://www.gutenberg.org/cache/epub/45/pg45-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/W3q8yo2U6kTBppFvrhhQW0FnpZgYgXJVNSMDGKXAuC8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxK3V4dWxyV1hM/LmpwZw" alt="A Little Princess">
+    <div class="book-title">A LITTLE PRINCESS</div>
+    <div class="book-author">FRANCES HODGSON BURNETT</div>
+    <a href="https://www.gutenberg.org/cache/epub/145/pg145-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/IJ9_M4Zy1uMoShOR2oBF00K6ExagaBabjMxcpubGvUE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFZK01XTVNCdUwu/anBn" alt="Pollyanna">
+    <div class="book-title">POLLYANNA</div>
+    <div class="book-author">ELEANOR H. PORTER</div>
+    <a href="https://www.gutenberg.org/cache/epub/1450/pg1450-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+  <div class="book-card">
+    <img src="https://imgs.search.brave.com/Pm32Nfy17O5k01Uk2I_bK55c96y0Zm3YqKAN_0hyY84/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTE5UmJSd20ydkwu/anBn" alt="The Secret Garden">
+    <div class="book-title">THE SECRET GARDEN</div>
+    <div class="book-author">FRANCES HODGSON BURNETT</div>
+    <a href="https://www.gutenberg.org/cache/epub/113/pg113-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+    <div class="book-card">
+    <img src="https://imgs.search.brave.com/_GVkAqGNIdc-OH8sMDAEzwYlOwQ36Y7esMV_pzASSZY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cHVibGlzaGVyc3dl/ZWtseS5jb20vY292/ZXIvOTc4MDA2MjQ5/ODUzMw" alt="The Secret Garden">
+    <div class="book-title">THE HATE YOU GAVE</div>
+    <div class="book-author">ANGIE THOMAS</div>
+    <a href="https://www.renaissanceacademyschools.com/uploads/1/5/2/9/15294762/the_hate_u_give_book.pdf" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+
+    <div class="book-card">
+    <img src="https://imgs.search.brave.com/5i2xMdliM4biBASjFR6gs2r1TKAlHFFor4YPlGqm4oY/rs:fit:860:0:0:0/g:ce/aHR0cDovL2Nkbi5w/bGF5YnV6ei5jb20v/Y2RuL2QzNjRiZjQ5/LWI0YzEtNGNmOC04/OGI0LThjMTNkNDNh/ZGIwZS8xM2I0M2Jj/ZC1lYzJlLTQwZDYt/YjBlNy0zYTQ1Mzg1/Y2IyZWUuanBlZw" alt="The Secret Garden">
+    <div class="book-title">WE WERE LIARS</div>
+    <div class="book-author">E. LOCKHART</div>
+    <a href="https://posterspageturners.wordpress.com/wp-content/uploads/2017/04/we_were_liars.pdf" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+      <div class="book-card">
+    <img src="https://imgs.search.brave.com/M9_UAJnUHUqdAp729Kf3La_sgmrePeDLjeh3bMlguJs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/Lzk4ODc0MjkvYy8x/ODYxLzE4NjEvNDA5/LzU1L2lsLzdhMWRl/YS81MDgwMzAwNDk1/L2lsXzYwMHg2MDAu/NTA4MDMwMDQ5NV90/YXJmLmpwZw" alt="The Secret Garden">
+    <div class="book-title">PETTER PAN</div>
+    <div class="book-author">J.M. BARRIE</div>
+    <a href="https://www.gutenberg.org/cache/epub/16/pg16-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+
+        <div class="book-card">
+    <img src="https://imgs.search.brave.com/wVa2QHtym71abM-vtl3p1EJcPXJnKkQc6yBzPSrpDoE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODEzaDltTFVqd0wu/anBn" alt="The Secret Garden">
+    <div class="book-title">DAVID COPPERFIELD</div>
+    <div class="book-author">CHARLES DICKENS</div>
+    <a href="https://www.gutenberg.org/cache/epub/766/pg766-images.html" class="book-link" target="_blank">Read e-book</a>
+  </div>
+</div>
+
+<div class="contact">
+  <a href="@_preyagarg_">INSTAGRAM:@_preyagarg_<br></a>
+  <a href="@preyagarg@gmail.com">G-MAIL:@preyagarg@gmail.com<br></a>
+  <a href="+91-77197-35003">CONTACT NO.:+91-77197-35003<br></a>
+
+  <footer >
+    <small>
+      <b>preya garg©.All Rights Reserved.</b>
+    </small>
+  </footer>
+</div>
+
+
+
+
+</body>
+</html>
